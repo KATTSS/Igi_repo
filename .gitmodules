@@ -4,3 +4,6 @@
 [submodule "IGI/LR2/geometric_lib"]
 	path = IGI/LR2/geometric_lib
 	url = https://github.com/smartiqaorg/geometric_lib
+[submodule "IGI/LR2/DockerComposeTest/Employee-Payroll-Salary-App-Angular-11-MEAN-Stack"]
+	path = IGI/LR2/DockerComposeTest/Employee-Payroll-Salary-App-Angular-11-MEAN-Stack
+	url = https://github.com/AmitXShukla/Employee-Payroll-Salary-App-Angular-11-MEAN-Stack

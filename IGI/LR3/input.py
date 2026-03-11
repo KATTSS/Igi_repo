@@ -34,3 +34,13 @@ def get_user_float():
             return float(input())
         except ValueError:
             print("Error. Try again")
+
+@input_decorator("string")
+def get_user_string():
+    """String input handler: returns string from keyboard."""
+    while True:
+        s = input()
+        if s:
+            return s
+        print("Error. Try again")
+

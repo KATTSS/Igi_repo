@@ -10,10 +10,11 @@ Date: 10.03.2026
 import my_math as mth
 import input as inp
 import output as out
+import str_analyser as stra
 
 def task_1():
     """Performs main logic for task 1"""
-    out.print_task_annotation(1, "Calculate cos(x) with power series and Math.cos()")
+    out.print_task_annotation(1, "Calculate cos(x) with power series and math.cos().")
     
     print("Enter x:")
     x=inp.get_user_int()
@@ -31,7 +32,7 @@ def task_2():
     """Performs main logic for task 2"""
     out.print_task_annotation(2, "Calculate sum for a numeric sequence," \
     " count amount of elements < 10." \
-    "\n\tStops after entering '100'")
+    "\n\tStops after entering '100'.")
 
     sequence_sum=0
     amount_smaller_10=0
@@ -47,3 +48,14 @@ def task_2():
         sequence_sum +=x
 
 # task_2()
+
+def task_3():
+    """Performs main logic for task 3."""
+    out.print_task_annotation(3, "Count amount of lowercase symbols and digits in a string.")
+
+    s = inp.get_user_string()
+
+    print(f"Amount of lowercase symbols: {stra.find_lowercase_count(s)}")
+    print(f"Amount of digits: {stra.find_digit_count(s)}")
+
+# task_3()

@@ -21,3 +21,39 @@ def find_digit_count(s):
         if symbol.isdigit():
             count += 1
     return count
+
+def count_consonant_starters(s):
+    """Returns amount of consonant-starter words in a string."""
+
+    words=s.upper().split(' ')
+    vowels=['A','E', 'I', 'O', 'U']
+    count=0
+
+    for word in words:
+        if word[0] not in vowels:
+            count +=1
+    return count
+
+def find_double_letter(s):
+    """Returns a set of words with double letters from the string."""
+    s = s.replace(',', '').replace('.', '')
+
+    words=s.split(' ')
+    result=set()
+
+    for word in words:
+        for i in range(len(word)-1):
+            if word[i].lower==word[i+1].lower:
+                result.add(word)
+                continue
+    return result
+
+def alphabet_sort(s):
+    """Returns sorted by alphabet string"""
+    s = s.replace(',', '').replace('.', '')
+
+    words=s.split(' ')
+
+    sorted_words=sorted(words, key=str.lower)
+
+    return ' '.join(sorted_words)

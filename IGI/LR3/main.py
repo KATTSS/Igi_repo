@@ -59,3 +59,23 @@ def task_3():
     print(f"Amount of digits: {stra.find_digit_count(s)}")
 
 # task_3()
+
+def task_4():
+    """Performs main logic for task 4."""
+    out.print_task_annotation(4, "1. Count the number of words that begin with a consonant letter;\n" \
+    "\t2. Find words with double letters, count their amount;\n" \
+    "\t3. Print words in alphabet order.")
+
+    s = "So she was considering in her own mind, " \
+    "as well as she could, for the hot day made her feel very sleepy and stupid, " \
+    "whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, " \
+    "when suddenly a White Rabbit with pink eyes ran close by her."
+
+    print(f"1: Amount of words started with consonant: {stra.count_consonant_starters(s)}")
+
+    doubles = stra.find_double_letter(s)
+    print(f"2: Amount of words with double letters: {len(doubles)}\n\t", doubles)
+
+    print(f"3: Sorted by alphabet string:\n{stra.alphabet_sort(s)}")
+
+# task_4()

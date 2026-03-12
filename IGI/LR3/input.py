@@ -7,7 +7,7 @@ Date: 10.03.2026
 """
 
 def input_decorator(input_type):
-    """A decorator for different type input"""
+    """A decorator for different type input."""
     def decorator(func):
         def wrapper():
             print(f"Enter a {input_type}:")
@@ -18,7 +18,7 @@ def input_decorator(input_type):
 
 @input_decorator("integer")
 def get_user_int():
-    """Integer input handler: returns int value from keyboard"""
+    """Integer input handler: returns int value from keyboard."""
     while True:
         try:
             return int(input())
@@ -28,7 +28,7 @@ def get_user_int():
 
 @input_decorator("float")
 def get_user_float():
-    """Float input handler: returns float value from keyboard"""
+    """Float input handler: returns float value from keyboard."""
     while True:
         try:
             return float(input())
@@ -60,6 +60,7 @@ def get_list(size):
     return my_list
 
 def get_yes_no():
+    """Returns bool from user."""
     print("Press any key for YES or press ENTER for NO")
     x = input()
     if not x:

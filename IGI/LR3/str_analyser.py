@@ -49,7 +49,7 @@ def find_double_letter(s):
     return result
 
 def alphabet_sort(s):
-    """Returns sorted by alphabet string"""
+    """Returns sorted by alphabet string."""
     s = s.replace(',', '').replace('.', '')
 
     words=s.split(' ')

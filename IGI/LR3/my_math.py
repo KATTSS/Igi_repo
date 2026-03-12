@@ -8,7 +8,7 @@ Date: 10.03.2026
 from math import cos, pi
 
 def row_calcilator(x=0, eps=0.01):
-    """Calculates cos(x) using power series"""
+    """Calculates cos(x) using power series."""
 
     x_rad = x % (2 * pi)
     if x_rad > pi:

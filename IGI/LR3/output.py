@@ -9,7 +9,7 @@ Date: 10.03.2026
 from math import log10
 
 def print_table(**kwargs):
-    """Prints a formatted table from passed dictionary"""
+    """Prints a formatted table from passed dictionary."""
     headers = list(kwargs.keys())
     values = list(kwargs.values())
 
@@ -36,7 +36,7 @@ def print_table(**kwargs):
 
 
 def print_task_annotation(task_num, annotation):
-    """Prints a string 'Task {Task num}: {Task annotation}' """
+    """Prints a string 'Task {Task num}: {Task annotation}'."""
     print(f"\nTask {task_num}: {annotation}")
 
 def print_menu():

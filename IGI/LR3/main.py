@@ -14,7 +14,7 @@ import str_analyser as stra
 import lists as li
 
 def task_1():
-    """Performs main logic for task 1"""
+    """Performs main logic for task 1."""
     out.print_task_annotation(1, "Calculate cos(x) with power series and math.cos().")
     
     print("Enter x:")
@@ -30,7 +30,7 @@ def task_1():
 # task_1()
 
 def task_2():
-    """Performs main logic for task 2"""
+    """Performs main logic for task 2."""
     out.print_task_annotation(2, "Calculate sum for a numeric sequence," \
     " count amount of elements < 10." \
     "\n\tStops after entering '100'.")

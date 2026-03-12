@@ -11,6 +11,7 @@ import my_math as mth
 import input as inp
 import output as out
 import str_analyser as stra
+import lists as li
 
 def task_1():
     """Performs main logic for task 1"""
@@ -79,3 +80,27 @@ def task_4():
     print(f"3: Sorted by alphabet string:\n{stra.alphabet_sort(s)}")
 
 # task_4()
+
+def task_5():
+    """Performs main logic for task 5."""
+    out.print_task_annotation(5, "1. Find amount > C;\n\t" \
+    "2. Find multiplication of elements after the biggest element.")
+
+    print("Enter list size:")
+    size=inp.get_natural_num()
+
+    my_list=inp.get_list(size)
+
+    print(f"The list you have entered: {my_list}")
+
+    print("Enter the constant to compare list elements:")
+    compare_constant = inp.get_user_float()
+
+    amount_bigger_compare_constant = li.get_amount_pos_bigger_constant(compare_constant, my_list)
+    print(f"1. Amount > C: {amount_bigger_compare_constant}")
+
+    max_elem_pos = li.find_max_pos(my_list)
+    multiplied = li.multiply_from_pos(my_list, max_elem_pos)
+    print(f"2. Multiplication of all elements after list max: {multiplied}")
+
+# task_5()

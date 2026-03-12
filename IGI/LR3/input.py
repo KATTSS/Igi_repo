@@ -44,3 +44,17 @@ def get_user_string():
             return s
         print("Error. Try again")
 
+def get_natural_num():
+    """Returns only positive integer."""
+    while True:
+        x=get_user_int()
+        if x>0:
+            return x
+        
+def get_list(size):
+    """Returns a sized list from a keyboard."""
+    my_list=list()
+    for i in range(size):
+        new_el=get_user_float()
+        my_list.append(new_el)
+    return my_list

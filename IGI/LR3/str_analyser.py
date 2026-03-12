@@ -43,7 +43,7 @@ def find_double_letter(s):
 
     for word in words:
         for i in range(len(word)-1):
-            if word[i].lower==word[i+1].lower:
+            if word[i].lower() == word[i+1].lower():
                 result.add(word)
                 continue
     return result

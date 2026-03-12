@@ -58,3 +58,10 @@ def get_list(size):
         new_el=get_user_float()
         my_list.append(new_el)
     return my_list
+
+def get_yes_no():
+    print("Press any key for YES or press ENTER for NO")
+    x = input()
+    if not x:
+        return False
+    return True

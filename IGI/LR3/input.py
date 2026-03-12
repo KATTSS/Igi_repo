@@ -65,3 +65,11 @@ def get_yes_no():
     if not x:
         return False
     return True
+
+def get_menu_option(options_count):
+    """Return a positive integer in range [1; options_count]."""
+    x=-1
+
+    while x<1 or x>options_count:
+        x = get_user_int()
+    return x

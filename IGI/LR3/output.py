@@ -37,4 +37,15 @@ def print_table(**kwargs):
 
 def print_task_annotation(task_num, annotation):
     """Prints a string 'Task {Task num}: {Task annotation}' """
-    print(f"Task {task_num}: {annotation}")
+    print(f"\nTask {task_num}: {annotation}")
+
+def print_menu():
+    """Prints a list of lab tasks."""
+
+    print("\n1. Calculate power series;\n" \
+          "2. Sequence operations;\n" \
+          "3. Keyboard text handler; \n" \
+          "4. Hardcoded text analyser; \n" \
+          "5. Numeric list operations;\n" \
+          "6. Exit all.\n" \
+          "\nEnter yuor choice:")

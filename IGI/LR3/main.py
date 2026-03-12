@@ -106,8 +106,37 @@ def task_5():
     print(f"1. Amount > C: {amount_bigger_compare_constant}")
 
     max_elem_pos = li.find_max_pos(my_list)
-    print(f"max pos: {max_elem_pos}, list size: {len(my_list)}")
     multiplied = li.multiply_from_pos(my_list, max_elem_pos+1)
     print(f"2. Multiplication of all elements after list max: {multiplied}")
 
 # task_5()
+
+def main():
+    """Handles all lab tasks in an endless loop."""
+    print("\nHello! This is Lab work №3.\n" \
+    "Standart types, collections, functions, modules\n" \
+    "Author: Ekaterina Butkevich\n" \
+    "Group: 453501\n" \
+    "Version: 1.0\n" \
+    "Date: 12.03.2026.")
+
+    while True:
+        out.print_menu()
+        x = inp.get_menu_option(6)
+        match x:
+            case 1:
+                task_1()
+            case 2:
+                task_2()
+            case 3:
+                task_3()
+            case 4:
+                task_4()
+            case 5:
+                task_5()
+            case 6:
+                break
+
+    print("\nProgram finished successfully! Have a hice day!)")
+
+main()
